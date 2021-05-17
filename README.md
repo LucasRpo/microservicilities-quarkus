@@ -60,4 +60,4 @@ REST es fácil con este recurso RESTEasy de Hello World.
 
 ## Guia ejercicio
 
-[Related guide section...](https://www.infoq.com/articles/microservicilities-quarkus/)
+[Guía del ejercicio...](https://www.infoq.com/articles/microservicilities-quarkus/)
