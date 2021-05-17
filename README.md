@@ -1,58 +1,59 @@
 # microservicilities-quarkus project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+Este proyecto utiliza Quarkus, el marco Java subatómico supersónico.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+Si desea obtener más información sobre Quarkus, visite su sitio web: https://quarkus.io/ .
 
-## Running the application in dev mode
+## Ejecutando la aplicación en modo dev
 
-You can run your application in dev mode that enables live coding using:
+Puede ejecutar su aplicación en modo dev que habilita la codificación en vivo usando:
 ```shell script
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+> **_NOTA:_**  Quarkus ahora se envía con una interfaz de usuario de desarrollo, que está disponible en modo de desarrollo solo en http://localhost:8080/q/dev/.
 
-## Packaging and running the application
+## Empaquetando y ejecutando la aplicación
 
-The application can be packaged using:
+La aplicación se puede empaquetar usando:
 ```shell script
 ./mvnw package
 ```
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
 
-If you want to build an _über-jar_, execute the following command:
+Produce el archivo `quarkus-run.jar` en el directorio `target/quarkus-app/`.
+Tenga en cuenta que no es un _über-jar_ ya que las dependencias se copian en el directorio `target/quarkus-app/lib/`.
+
+Si desea construir un _über-jar_, ejecute el siguiente comando:
 ```shell script
 ./mvnw package -Dquarkus.package.type=uber-jar
 ```
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+La aplicación ahora se puede ejecutar usando `java -jar target/quarkus-app/quarkus-run.jar`.
 
-## Creating a native executable
+## Creando un ejecutable nativo
 
-You can create a native executable using: 
+Puede crear un ejecutable nativo usando: 
 ```shell script
 ./mvnw package -Pnative
 ```
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
+O, si no tiene GraalVM instalado, puede ejecutar la compilación ejecutable nativa en un contenedor usando: 
 ```shell script
 ./mvnw package -Pnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/microservicilities-quarkus-1.0.0-SNAPSHOT-runner`
+Luego puede ejecutar su ejecutable nativo con: `./target/microservicilities-quarkus-1.0.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
+Si desea obtener más información sobre la creación de ejecutables nativos, consulte https://quarkus.io/guides/maven-tooling.html.
 
-## Related guides
+## Guías relacionadas
 
 - RESTEasy JAX-RS ([guide](https://quarkus.io/guides/rest-json)): REST endpoint framework implementing JAX-RS and more
 
-## Provided examples
+## Ejemplos proporcionados
 
-### RESTEasy JAX-RS example
+### RESTEasy JAX-RS Ejemplos
 
-REST is easy peasy with this Hello World RESTEasy resource.
+REST es fácil con este recurso RESTEasy de Hello World.
 
 [Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
