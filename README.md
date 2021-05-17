@@ -57,3 +57,7 @@ Si desea obtener más información sobre la creación de ejecutables nativos, co
 REST es fácil con este recurso RESTEasy de Hello World.
 
 [Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
+
+## Guia ejercicio
+
+[Related guide section...](https://www.infoq.com/articles/microservicilities-quarkus/)
